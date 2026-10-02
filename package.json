@@ -1,0 +1,31 @@
+{
+  "name": "@hathq/sem-lang-surface-html",
+  "version": "0.10.0",
+  "type": "module",
+  "license": "Apache-2.0",
+  "description": "Bounded WHATWG HTML structured-surface adapter for sem-lang",
+  "files": [
+    "src",
+    "README.md",
+    "repository.toml",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.d.mts",
+      "import": "./src/index.mjs"
+    }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@hathq/sem-lang-structured-surface": "file:../../../../../../../.artifacts/npm/038b352cc1be6a4596fcfae3aaf9f4c1827663a1fb9a5b23f606f8442515593b/hathq-sem-lang-structured-surface-0.10.0.tgz",
+    "parse5": "8.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zixcel/sem-lang-surface-html.git"
+  }
+}
